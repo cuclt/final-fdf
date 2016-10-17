@@ -1,0 +1,22 @@
+<div class="header">
+  <div class="logo">
+    <h1><%= link_to t("title") %></h1>
+  </div>
+  <div class="top-nav">
+    <span class="menu"><%= image_tag "menu.png" %></span>
+    <ul>
+      <li><%= link_to t("home"), "#", class: "active" %></li>
+      <li><%= link_to t(".categories"), "#" %></li>
+      <li><%= link_to t(".menu"), "#" %></li>
+      <li class="cart">
+        <%= link_to "#" do %>
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+          <span class="em-topcart-qty">0</span>
+        <% end %>
+      </li>
+      <li><%= link_to t(".signup"), "#" %></li>
+      <li><%= link_to t(".signin"), "#" %></li>
+    </ul>
+  </div>
+  <div class="clearfix"> </div>
+</div>
