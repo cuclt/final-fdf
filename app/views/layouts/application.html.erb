@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fdf18</title>
+    <title><% t "title" %></title>
+    <%= stylesheet_link_tag "application", media: "all",
+      "data-turbolinks-track": true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": true %>
+    <%= favicon_link_tag "fd-logo.jpg" %>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <div class="banner">
+      <%= render "layouts/header" %>
+      <div class="banner-slider">
+        <%= render "layouts/banner" %>
+      </div>
+    </div>
     <%= yield %>
+    <%= render "layouts/footer" %>
   </body>
 </html>

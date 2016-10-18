@@ -20,4 +20,18 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title: "Foods And Drinks"
+  home: "Home"
+  layouts:
+    header:
+      categories: "Categories"
+      menu: "Menu"
+      signup: "Sign up"
+      signin: "Sign in"
+    footer:
+      copy_right: "2016"
+      about_us: "About Foods And Drinks"
+      about_description: "Our store always ensure the best service for customers."
+      popular_product: "Popular Products"
+      user_suggest: "You can suggest new product for us!"
+      submit: "Submit"
