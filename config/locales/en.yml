@@ -28,6 +28,8 @@ en:
       menu: "Menu"
       signup: "Sign up"
       signin: "Sign in"
+      logout: "Logout"
+      profile: "Profile"
     footer:
       copy_right: "2016"
       about_us: "About Foods And Drinks"

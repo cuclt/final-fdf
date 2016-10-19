@@ -14,9 +14,14 @@
           <span class="em-topcart-qty">0</span>
         <% end %>
       </li>
-      <li><%= link_to t(".signup"), "#" %></li>
-      <li><%= link_to t(".signin"), "#" %></li>
+      <% if user_signed_in? %>
+       <li><%= link_to t(".profile"), "#" %></li>
+        <li><%= link_to t(".logout"), destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to t(".signup"), new_user_registration_path %></li>
+        <li><%= link_to t(".signin"), "#" %></li>
+      <% end %>
     </ul>
   </div>
-  <div class="clearfix"> </div>
+  <div class="clearfix"></div>
 </div>
