@@ -1,0 +1,79 @@
+<div class="history">
+  <div class="container">
+    <div class="w3l-history-grids">
+      <div class="col-md-5 w3l-history-left">
+        <%= image_tag @product_new.image %>
+      </div>
+      <div class="col-md-7 w3l-history-right">
+        <h2><%= @product_new.name %></h2>
+        <p><%= @product_new.description %></p>
+        <%= link_to t("more"), "#" %>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+<div class="services">
+  <div class="container">
+    <div class="services-info">
+      <h3><%= t ".top_product" %></h3>
+      <p><%= t ".top_product_des" %></p>
+    </div>
+  </div>
+  <div class="services-grids">
+    <div id="owl-product" class="owl-carousel owl-theme">
+      <% @top_products.each do |product| %>
+        <div class="item">
+          <div class="services-grid-info">
+            <%= image_tag product.image %>
+            <div class="services-grid-caption">
+              <i class="fa fa-cutlery" aria-hidden="true"></i>
+              <h4><%= product.name %></h4>
+              <p><%= product.price %><%= t "currency" %></p>
+              <%= link_to "#", class: "btn btn-danger" do %>
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                <%= t ".cart" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="special">
+  <div class="container">
+    <div class="services-info">
+      <h3><%= t ".today_specials" %></h3>
+      <p><%= t ".today_special_des" %></p>
+    </div>
+    <div class="special-grids">
+      <% @special_products.each do |s_product| %>
+        <div class="col-md-6 w3l-special-grid">
+          <%= image_tag s_product.image %>
+          <div class="col-md-6 w3ls-special-img">
+            <div class="wpf-demo-6">
+              <div class="w3ls-special-text">
+                <p><%= s_product.price %><%= t "currency" %></p>
+              </div>
+              <figcaption class="view-caption">
+                <h4><%= t ".quantity" %><%= s_product.quantity %></h4>
+                <%= link_to t("menu"), "#" %>
+              </figcaption>
+            </div>
+          </div>
+          <div class="col-md-6 agileits-special-info">
+            <h4><%= link_to s_product.name, "#" %></h4>
+            <%= link_to "#", class: "btn btn-danger add-cart" do %>
+              <span class="glyphicon glyphicon-shopping-cart"></span>
+              <%= t ".cart" %>
+            <% end %>
+            <p><%= s_product.description.truncate Settings.product.truncate_des_product %></p>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      <% end %>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>

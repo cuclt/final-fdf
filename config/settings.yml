@@ -1,0 +1,7 @@
+per_page: 10
+home:
+  limit_product: 6
+  offset_top_product: 1
+  offset_special_product: 7
+product:
+  truncate_des_product: 50
