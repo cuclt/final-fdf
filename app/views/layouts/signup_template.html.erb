@@ -9,11 +9,8 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class="banner">
+    <div class="wrapper">
       <%= render "layouts/header" %>
-      <div class="banner-slider">
-        <%= render "layouts/banner" %>
-      </div>
     </div>
     <%= yield %>
     <%= render "layouts/footer" %>

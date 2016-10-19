@@ -2156,3 +2156,50 @@ i.fa.fa-pencil{
     margin: 0 1.5em;
   }
 }
+.box {
+  background: #fff;
+  margin: 0 0 1.875em;
+  border: solid 0.0625em #e6e6e6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  -webkit-box-shadow: 0 0.0625em 0.3125em rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.0625em 0.3125em rgba(0, 0, 0, 0.1);
+}
+/*social*/
+.social {
+  height: 1.875em;
+  line-height: 1.875em;
+  display: table;
+  width: 100%;
+}
+.social div {
+  display: inline-block;
+  width: 30%;
+  color: #eee;
+  font-size: 0.75em;
+  text-align: center;
+  border-radius: 0.1875em;
+}
+.social div i.fa {
+  font-size: 1em;
+  line-height: 1.875em;
+}
+.social a {
+  text-decoration: none !important;
+}
+.fb {
+  background: #3B5A9A;
+  border-bottom: solid 0.1875em #036;
+}
+.goog {
+  background: #f35041;
+  margin-left: 4%;
+  border-bottom: solid 0.1875em #e60000;
+}
+.tw {
+  background: #2CA8D2;
+  margin-left: 4%;
+  border-bottom: solid 0.1875em #3399CC;
+}
