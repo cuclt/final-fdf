@@ -7,7 +7,7 @@
       <div class="col-md-7 w3l-history-right">
         <h2><%= @product_new.name %></h2>
         <p><%= @product_new.description %></p>
-        <%= link_to t("more"), "#" %>
+        <%= link_to t("more"), product_path(@product_new.id) %>
       </div>
       <div class="clearfix"> </div>
     </div>
@@ -28,7 +28,7 @@
             <%= image_tag product.image %>
             <div class="services-grid-caption">
               <i class="fa fa-cutlery" aria-hidden="true"></i>
-              <h4><%= product.name %></h4>
+              <h4><%=link_to product.name, product_path(product.id) %></h4>
               <p><%= product.price %><%= t "currency" %></p>
               <%= link_to cart_path(product.id), remote: true, method: :patch, class: "btn btn-danger" do %>
                 <span class="glyphicon glyphicon-shopping-cart"></span>
@@ -63,7 +63,7 @@
             </div>
           </div>
           <div class="col-md-6 agileits-special-info">
-            <h4><%= link_to s_product.name, "#" %></h4>
+            <h4><%= link_to s_product.name, product_path(@product_new.id) %></h4>
             <%= link_to cart_path(s_product.id), remote: true, method: :patch, class: "btn btn-danger add-cart" do %>
               <span class="glyphicon glyphicon-shopping-cart"></span>
               <%= t ".cart" %>

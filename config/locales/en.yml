@@ -34,6 +34,13 @@ en:
   title: "Foods And Drinks"
   home: "Home"
   currency: "₫"
+  could_not_find_the_product: "Could not find the product"
+  description: "Description"
+  comments: "Comments"
+  could_not_load_the_comment: "Counld not load the comment"
+  error: "Error"
+  price: "Price"
+  reply: "Reply"
   layouts:
     header:
       categories: "Categories"

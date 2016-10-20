@@ -1,4 +1,6 @@
 per_page: 12
+per_page_comment: 6
+limit_categories: 12
 home:
   limit_product: 6
   offset_top_product: 1
