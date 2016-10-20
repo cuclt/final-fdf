@@ -58,3 +58,7 @@ en:
       today_specials: "Today specials"
       today_special_des: "Top specials product today."
       quantity: "Quantity: "
+  products:
+    index:
+      top_product: "Top Product"
+      add_to_cart: "Add to cart"

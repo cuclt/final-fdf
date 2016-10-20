@@ -2237,3 +2237,28 @@ i.fa.fa-pencil{
   margin-top: 1.125em;
 }
 
+.news-grid-info .product-title {
+  color: #f35041;
+}
+.news-grid-info .product-title:hover {
+  color: #e74c3c;
+}
+.product-item {
+  margin-bottom: 1.25em;
+}
+.news-grid-info .btn-add-to-cart {
+  background: #f35041;
+  color: #fff;
+  font-size: 1em;
+  font-weight: none !important;
+  margin-top: 0.75em;
+}
+.news-grid-info .btn-add-to-cart:hover {
+  background: #e74c3c;
+  color: #fff;
+  font-size: 1em;
+  font-weight: none !important;
+}
+.paginate a {
+  background-color: #f35041;
+}
