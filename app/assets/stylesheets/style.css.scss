@@ -296,6 +296,8 @@ span.menu {
 }
 .w3l-history-left img{
   width: 100%;
+  max-with: 27.8125em;
+  max-height: 18.5em;
 }
 .w3l-history-right h2{
   color: #333333;
@@ -402,10 +404,10 @@ i.fa.fa-cutlery {
 }
 .w3l-special-grid {
   padding: 0;
+  position: relative;
 }
 .w3ls-special-img {
   padding: 0;
-  background: url(sp1.jpg) no-repeat 0em 0em;
   min-height: 17.5em;
   background-size: cover;
   text-align: center;
@@ -417,7 +419,7 @@ i.fa.fa-cutlery {
 }
 .agileits-special-info{
   text-align: center;
-  padding: 5.66em 2em;
+  padding: 4.1em 2em;
   background: #FFFFFF;
   border: solid 0.0625em #eaeaea;
 }
@@ -433,8 +435,8 @@ i.fa.fa-cutlery {
   width: 23%;
   padding: 0.0625em;
   position: absolute;
-  top: 2.25em;
-  left: 5.125em;
+  top: 1.25em;
+  left: 3.375em;
 }
 .agileits-special-info p{
   line-height: 1.5em;
@@ -442,26 +444,14 @@ i.fa.fa-cutlery {
   color: #999999;
   font-size: .9em;
 }
-.wthree-img{
-  background: url(sp2.jpg) no-repeat 0em 0em !important;
-  background-size: cover !important;
-}
-.wthree-img2{
-  background: url(sp3.jpg) no-repeat 0em 0em !important;
-  background-size: cover !important;
-}
-.wthree-img3{
-  background: url(sp4.jpg) no-repeat 0em 0em !important;
-  background-size: cover !important;
-}
 .w3ls-special-text p{
   color: #FFFFFF;
   font-size: 1.5em;
   padding: 1.3em 0 0 0;
   background: #f35041;
-  width: 6.25em;
+  width: 5.25em;
   margin: 0;
-  height: 6.25em;
+  height: 4.25em;
 }
 
 /* Seventh Section */
@@ -1559,18 +1549,6 @@ i.fa.fa-pencil{
 .menu-grids {
   margin: 0 !important;
 }
-.menu1 {
-  background: url(m1.jpg) no-repeat 0em 0em !important;
-  background-size: cover !important;
-}
-.menu2 {
-  background: url(m2.jpg) no-repeat 0em 0em !important;
-  background-size: cover !important;
-}
-.menu3 {
-  background: url(m3.jpg) no-repeat 0em 0em !important;
-  background-size: cover !important;
-}
 .menu-text p {
   color: #FFFFFF;
   background: #616161;
@@ -1580,7 +1558,7 @@ i.fa.fa-pencil{
 /*-- responsive --*/
 @media(max-width: 1080px){
   .banner {
-    background: url(1.jpg) no-repeat 0em 0em;
+    background: url(bg.jpg) no-repeat 0em 0em;
     background-size: cover;
   }
   .top-nav ul li:nth-child(3) {
@@ -1903,11 +1881,6 @@ i.fa.fa-pencil{
   .services-grid-caption {
     height: 26.0625em;
   }
-  .w3ls-special-img {
-    background: url(sp1.jpg) no-repeat 0em 0em;
-    min-height: 11.25em;
-    background-size: cover;
-  }
   .wpf-demo-6 {
     height: 11.25em;
     overflow: hidden;
@@ -2020,7 +1993,7 @@ i.fa.fa-pencil{
 }
 @media(max-width: 320px){
   .banner {
-    background: url(1.jpg) no-repeat -8.0625em 0em;
+    background: url(bg.jpg) no-repeat -8.0625em 0em;
     background-size: cover;
   }
   .logo {
@@ -2052,11 +2025,6 @@ i.fa.fa-pencil{
     height: 9.0625em;
     overflow: hidden;
   }
-  .w3ls-special-img {
-    background: url(sp1.jpg) no-repeat 0em 0em;
-    min-height: 9.0625em;
-    background-size: cover;
-  }
   .agileits-special-info {
     padding: .5em .5em;
   }
@@ -2076,7 +2044,7 @@ i.fa.fa-pencil{
   }
   .about-bg {
     padding: 0em 0 1em 0 !important;
-    background: url(1.jpg) no-repeat 0em 0em !important;
+    background: url(bg.jpg) no-repeat 0em 0em !important;
     background-size: cover !important;
   }
   .h-f {
@@ -2250,5 +2218,22 @@ i.fa.fa-pencil{
   .formhover:hover {
     width: 2000px;
   }
+}
+.w3l-special-grid img {
+  width: 100%;
+  height: 100%;
+  max-width: 17.8125em;
+  max-height: 17.5em;
+  position: absolute;
+}
+.w3ls-special-img {
+  z-index: 9999;
+}
+.agileits-special-info h4 a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.add-cart {
+  margin-top: 1.125em;
 }
 

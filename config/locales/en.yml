@@ -33,6 +33,7 @@ en:
   error_login: "Invalid email/password combination"
   title: "Foods And Drinks"
   home: "Home"
+  currency: "₫"
   layouts:
     header:
       categories: "Categories"
@@ -49,3 +50,11 @@ en:
       popular_product: "Popular Products"
       user_suggest: "You can suggest new product for us!"
       submit: "Submit"
+  static_pages:
+    home:
+      top_product: "Top product"
+      cart: "Add to cart"
+      top_product_des: "Top product today."
+      today_specials: "Today specials"
+      today_special_des: "Top specials product today."
+      quantity: "Quantity: "
