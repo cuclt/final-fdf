@@ -20,6 +20,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  signin: "Sign in"
+  signup: "Sign up"
+  edit_profile: "Edit profile"
+  signup_now: "Sign up now!"
+  forgot_password: "Forgot Password?"
+  or: "Or"
+  remember_me: "Remember me"
+  email: "Email"
+  password: "Password"
+  name: "Name"
+  error_login: "Invalid email/password combination"
   title: "Foods And Drinks"
   home: "Home"
   layouts:
@@ -30,6 +41,7 @@ en:
       signin: "Sign in"
       logout: "Logout"
       profile: "Profile"
+      signout: "Sign out"
     footer:
       copy_right: "2016"
       about_us: "About Foods And Drinks"

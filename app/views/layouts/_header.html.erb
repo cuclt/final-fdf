@@ -5,7 +5,7 @@
   <div class="top-nav">
     <span class="menu"><%= image_tag "menu.png" %></span>
     <ul>
-      <li><%= link_to t("home"), "#", class: "active" %></li>
+      <li><%= link_to t("home"), root_path, class: "active" %></li>
       <li><%= link_to t(".categories"), "#" %></li>
       <li><%= link_to t(".menu"), "#" %></li>
       <li class="cart">
@@ -15,11 +15,15 @@
         <% end %>
       </li>
       <% if user_signed_in? %>
-       <li><%= link_to t(".profile"), "#" %></li>
+        <li><%= link_to t(".profile"), "#" %></li>
         <li><%= link_to t(".logout"), destroy_user_session_path, method: :delete %></li>
       <% else %>
         <li><%= link_to t(".signup"), new_user_registration_path %></li>
-        <li><%= link_to t(".signin"), "#" %></li>
+        <li><%= link_to t(".signin"), new_user_session_path %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to t(".signout"), destroy_user_session_path,
+            method: :delete %></li>
+        <% end %>
       <% end %>
     </ul>
   </div>
