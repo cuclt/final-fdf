@@ -11,7 +11,7 @@
       <li class="cart">
         <%= link_to "#" do %>
           <span class="glyphicon glyphicon-shopping-cart"></span>
-          <span class="em-topcart-qty">0</span>
+          <span class="em-topcart-qty"><%= @cart.count %></span>
         <% end %>
       </li>
       <% if user_signed_in? %>
