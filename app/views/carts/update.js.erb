@@ -1,0 +1,4 @@
+$('.em-topcart-qty').text('<%= @cart.count %>');
+$('.total-item').text('<%= @cart.total_price %>');
+$('#cart').html('<%= j render "list_product" %>');
+

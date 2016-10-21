@@ -30,7 +30,7 @@
               <i class="fa fa-cutlery" aria-hidden="true"></i>
               <h4><%= product.name %></h4>
               <p><%= product.price %><%= t "currency" %></p>
-              <%= link_to "#", class: "btn btn-danger" do %>
+              <%= link_to cart_path(product.id), remote: true, method: :patch, class: "btn btn-danger" do %>
                 <span class="glyphicon glyphicon-shopping-cart"></span>
                 <%= t ".cart" %>
               <% end %>
@@ -64,7 +64,7 @@
           </div>
           <div class="col-md-6 agileits-special-info">
             <h4><%= link_to s_product.name, "#" %></h4>
-            <%= link_to "#", class: "btn btn-danger add-cart" do %>
+            <%= link_to cart_path(s_product.id), remote: true, method: :patch, class: "btn btn-danger add-cart" do %>
               <span class="glyphicon glyphicon-shopping-cart"></span>
               <%= t ".cart" %>
             <% end %>

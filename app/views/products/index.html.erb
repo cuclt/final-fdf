@@ -14,7 +14,7 @@
             <h5><%= product.price %><%= t "currency" %>
             </h5>
             <p><%= product.description.truncate Settings.product.truncate_des_product  %></p>
-            <%= link_to "#", class: "btn btn-add-to-cart" do %>
+            <%= link_to cart_path(product.id), remote: true, method: :patch, class: "btn btn-add-to-cart" do %>
               <span class="glyphicon glyphicon-shopping-cart"></span>
               <%= t ".add_to_cart" %>
             <% end %>

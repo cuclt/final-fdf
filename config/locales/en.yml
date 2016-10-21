@@ -62,3 +62,14 @@ en:
     index:
       top_product: "Top Product"
       add_to_cart: "Add to cart"
+  carts:
+    index:
+      product_name: "Product Name"
+      move_to_cart: "Move to cart"
+      unit_price: "Unit price"
+      qty: "Quantity"
+      subtotal: "Subtotal"
+      total: "Total: "
+    list_product:
+      increase: "increase"
+      decrease: "decrease"
