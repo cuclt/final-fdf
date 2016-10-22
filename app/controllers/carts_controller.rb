@@ -1,4 +1,7 @@
 class CartsController < ApplicationController
+  def index
+    @order = Order.new
+  end
 
   def update
     @cart.add_item params[:id]

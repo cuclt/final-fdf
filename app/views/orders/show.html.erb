@@ -1,0 +1,32 @@
+<div class="events">
+  <div class="container">
+      <div class="cart-total pull-right">
+        <h3>
+          <%= t ".total" %>
+          <span class="total-item"><%= @order.total %></span>
+          <%= t "currency" %>
+        </h3>
+      </div>
+      <table id="shopping-cart-table" class="data-table cart-table">
+        <thead>
+          <tr class="em-block-title">
+            <th class="a-center">
+              <span class="nobr"><%= t ".product_name" %></span>
+            </th>
+            <th>&nbsp;</th>
+            <th class="a-center" colspan="1">
+              <span class="nobr"><%= t ".unit_price" %></span>
+            </th>
+            <th class="a-center">
+              <span class="nobr"><%= t "address" %></span>
+            </th>
+            <th class="a-center"><%= t ".qty" %></th>
+            <th class="a-center last" colspan="1"><%= t ".subtotal" %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render @order %>
+        </tbody>
+      </table>
+  </div>
+</div>

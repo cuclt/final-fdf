@@ -1,36 +1,40 @@
-<div class="events">
-  <div class="container">
-    <form>
-      <div class="cart-total pull-right">
-        <h3>
-          <%= t ".total" %>
-          <span class="total-item"><%= @cart.total_price %></span>
-          <%= t "currency" %>
-        </h3>
-      </div>
-      <table id="shopping-cart-table" class="data-table cart-table">
-        <thead>
-          <tr class="em-block-title">
-            <th class="a-center"><span class="nobr"><%= t ".product_name" %></span>
-            </th>
-            <th>&nbsp;</th>
-            </th>
-            <th class="a-center" colspan="1"><span class="nobr"><%= t ".unit_price" %></span>
-            </th>
-            <th class="a-center"><%= t ".qty" %></th>
-            <th class="a-center last" colspan="1"><%= t ".subtotal" %></th>
-          </tr>
-        </thead>
-        <tbody id="cart">
-          <%= render "list_product" %>
-        </tbody>
-      </table>
-      <div class="order">
-      <% if @cart.present? %>
-        <%= link_to t(".order"), "#" , class: "button btn-update" %>
-      <% end %>
-      </div>
-      <div class="clearfix"></div>
-    </form>
+<% if @cart.present? %>
+  <div class="events">
+    <div class="container">
+        <div class="cart-total pull-right">
+          <h3>
+            <%= t ".total" %>
+            <span class="total-item"><%= @cart.total_price %></span>
+            <%= t "currency" %>
+          </h3>
+        </div>
+        <table id="shopping-cart-table" class="data-table cart-table">
+          <thead>
+            <tr class="em-block-title">
+              <th class="a-center"><span class="nobr"><%= t ".product_name" %></span>
+              </th>
+              <th>&nbsp;</th>
+              </th>
+              <th class="a-center" colspan="1"><span class="nobr"><%= t ".unit_price" %></span>
+              </th>
+              <th class="a-center"><%= t ".qty" %></th>
+              <th class="a-center last" colspan="1"><%= t ".subtotal" %></th>
+            </tr>
+          </thead>
+          <tbody id="cart">
+            <%= render "list_product" %>
+          </tbody>
+        </table>
+        <div class="order">
+        <% if user_signed_in? %>
+          <%= link_to t(".order"), "#", class: "button btn-update",
+            data: {toggle: "modal", target: "#address"} %>
+        <% else %>
+          <%= link_to t(".signin_to_order"), new_user_session_path, class: "button btn-update" %>
+        <% end %>
+        </div>
+        <div class="clearfix"></div>
+    </div>
   </div>
-</div>
+  <%= render "add_address" %>
+<% end %>

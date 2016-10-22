@@ -41,6 +41,11 @@ en:
   error: "Error"
   price: "Price"
   reply: "Reply"
+  address: "Address"
+  close: "×"
+  time:
+    formats:
+      short_date: "%m/%d/%Y"
   layouts:
     header:
       categories: "Categories"
@@ -70,6 +75,7 @@ en:
       top_product: "Top Product"
       add_to_cart: "Add to cart"
   carts:
+    not_product: "Your cart haven't product."
     index:
       product_name: "Product Name"
       move_to_cart: "Move to cart"
@@ -77,6 +83,15 @@ en:
       qty: "Quantity"
       subtotal: "Subtotal"
       total: "Total: "
+      order: "Order Now"
+      signin_to_order: "Sign in to order"
     list_product:
       increase: "increase"
       decrease: "decrease"
+  success:
+    orders:
+      successful: "Order successfully!"
+      not_found: "Order not found!"
+  danger:
+    orders:
+      address: "Please enter address."

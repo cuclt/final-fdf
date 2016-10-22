@@ -1,0 +1,26 @@
+<div class="events">
+  <div class="container">
+      <table id="shopping-cart-table" class="data-table cart-table">
+        <thead>
+          <tr class="em-block-title">
+            <th class="a-center">
+              <span class="nobr"><%= t ".time" %></span>
+            </th>
+            <th class="a-center">
+              <span class="nobr"><%= t ".quantity" %></span>
+            </th>
+            <th class="a-center">
+              <span class="nobr"><%= t "address" %></span>
+            </th>
+            <th class="a-center">
+              <span class="nobr"><%= t ".status" %></span>
+            </th>
+            <th class="a-center last" colspan="1"><%= t ".subtotal" %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render "list_orders" %>
+        </tbody>
+      </table>
+  </div>
+</div>
