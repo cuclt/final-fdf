@@ -1,0 +1,12 @@
+<h1><%= t ".order" %></h1>
+<h2> <%= t ".user" %>: <%= @user.name %> </h2>
+<div>
+  <div>
+    <%= l @order.created_at, format: :short_date %>
+    <span><%= @order.status %></span>
+  </div>
+  <%= render "order_details", order_details: @order.order_details %>
+  <div>
+    <h4><b><%= t ".total" %>: </b><%= @order.total %><%= t "currency" %></h4>
+  </div>
+</div>

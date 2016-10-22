@@ -88,3 +88,14 @@ en:
   danger:
     orders:
       address: "Please enter address."
+  order_mailer:
+    index:
+      order: "Order mail"
+      user: "Username"
+      total: "Total"
+    order_details:
+      number_order: "No."
+      category: "Category"
+      name: "Name"
+      quantity: "Quantity"
+      price: "Price"
