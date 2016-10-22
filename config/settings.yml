@@ -1,6 +1,7 @@
 per_page: 12
-email_admin: "cuc12cntt@gmail.com"
+email_admin: "admin@gmail.com"
 subject: "Order mail"
+room_id: 57477338
 home:
   limit_product: 6
   offset_top_product: 1
