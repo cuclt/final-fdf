@@ -10,14 +10,14 @@ class OrdersController < ApplicationController
   def create
     if @cart.present?
       @order = Order.new order_params
-        if @order.save
-          session.delete :cart
-          flash[:success] = t "success.orders.successful"
-          redirect_to order_path @order
-        else
-          flash[:danger] = t "danger.orders.address"
-          redirect_to :back
-        end
+      if @order.save
+        session.delete :cart
+        flash[:success] = t "success.orders.successful"
+        redirect_to order_path @order
+      else
+        flash[:danger] = t "danger.orders.address"
+        redirect_to :back
+      end
     else
       redirect_to carts_path
     end
