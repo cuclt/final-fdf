@@ -41,6 +41,12 @@ en:
   error: "Error"
   price: "Price"
   reply: "Reply"
+  your_order: "Your order"
+  update: "Update"
+  profile: "Profile"
+  setting: "Setting"
+  logout: "Logout"
+  history_order: "History order"
   layouts:
     header:
       categories: "Categories"
@@ -80,3 +86,6 @@ en:
     list_product:
       increase: "increase"
       decrease: "decrease"
+  danger:
+    categories:
+      not_found: "Category not found!"
