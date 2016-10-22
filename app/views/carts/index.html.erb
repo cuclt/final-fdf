@@ -1,6 +1,5 @@
 <div class="events">
   <div class="container">
-    <form>
       <div class="cart-total pull-right">
         <h3>
           <%= t ".total" %>
@@ -26,11 +25,14 @@
         </tbody>
       </table>
       <div class="order">
-      <% if @cart.present? %>
-        <%= link_to t(".order"), "#" , class: "button btn-update" %>
+      <% if user_signed_in? %>
+        <%= link_to t(".order"), "#", class: "button btn-update",
+          data: {toggle: "modal", target: "#address"} %>
+      <% else %>
+        <%= link_to t(".signin_to_order"), new_user_session_path, class: "button btn-update" %>
       <% end %>
       </div>
       <div class="clearfix"></div>
-    </form>
   </div>
 </div>
+<%= render "add_address" %>

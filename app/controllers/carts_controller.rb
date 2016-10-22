@@ -1,4 +1,10 @@
 class CartsController < ApplicationController
+  def index
+    if @cart.blank?
+      flash[:danger] = t "carts.not_product"
+    end
+    @order = Order.new
+  end
 
   def update
     @cart.add_item params[:id]

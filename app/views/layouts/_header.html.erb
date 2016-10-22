@@ -7,9 +7,9 @@
     <ul>
       <li><%= link_to t("home"), root_path, class: "active" %></li>
       <li><%= link_to t(".categories"), "#" %></li>
-      <li><%= link_to t(".menu"), "#" %></li>
+      <li><%= link_to t(".menu"), products_path %></li>
       <li class="cart">
-        <%= link_to "#" do %>
+        <%= link_to carts_path do %>
           <span class="glyphicon glyphicon-shopping-cart"></span>
           <span class="em-topcart-qty"><%= @cart.count %></span>
         <% end %>
