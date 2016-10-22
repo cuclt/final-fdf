@@ -1,4 +1,6 @@
 per_page: 12
+email_admin: "cuc12cntt@gmail.com"
+subject: "Order mail"
 home:
   limit_product: 6
   offset_top_product: 1

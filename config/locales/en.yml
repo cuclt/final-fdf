@@ -84,3 +84,14 @@ en:
     orders:
       successful: "Order successfully!"
       not_found: "Order not found!"
+  order_mailer:
+    index:
+      order: "Order mail"
+      user: "Username"
+      total: "Total"
+    order_details:
+      number_order: "No."
+      category: "Category"
+      name: "Name"
+      quantity: "Quantity"
+      price: "Price"
