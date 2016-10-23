@@ -34,6 +34,7 @@ en:
   title: "Foods And Drinks"
   home: "Home"
   currency: "₫"
+  suggest_product: "Suggest product"
   layouts:
     header:
       categories: "Categories"
@@ -73,3 +74,9 @@ en:
     list_product:
       increase: "increase"
       decrease: "decrease"
+  success:
+    suggests:
+      successful: "Suggest successfully!"
+  danger:
+    suggests:
+      fails: "Something went wrong!"

@@ -4,4 +4,5 @@ Rails.application.routes.draw do
     omniauth_callbacks: "users/omniauth_callbacks"}
   resources :products
   resources :carts
+  resources :suggests, only: [:new, :create]
 end

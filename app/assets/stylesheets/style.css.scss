@@ -674,7 +674,7 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter{
 .popular-grids:last-child{
   margin: 1em 0 0 0;
 }
-.agile-footer-grid input[type="submit"] {
+.agile-footer-grid .suggest-product {
   outline: none;
   color: #FFFFFF;
   margin-top: 1em;
@@ -689,7 +689,7 @@ ul.w3agile_footer_grid_list i.fa.fa-twitter{
   -ms-transition: 0.5s all;
   transition: 0.5s all;
 }
-.agile-footer-grid input[type="submit"]:hover{
+.agile-footer-grid .suggest-product:hover{
   border: 0.125em solid #f35041;
   color: #FFFFFF;
   background: #f35041;
@@ -2097,7 +2097,7 @@ i.fa.fa-pencil{
   button.btn1 {
     font-size: .9em;
   }
-  .agile-footer-grid input[type="submit"] {
+  .agile-footer-grid .suggest-product {
     padding: .5em 1em;
   }
 }
@@ -2464,4 +2464,6 @@ a:hover {
   line-height: 1;
   padding-left: 4px;
 }
-
+.suggest {
+  margin-bottom: 20px !important;
+}
