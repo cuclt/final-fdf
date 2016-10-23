@@ -34,6 +34,8 @@ en:
   title: "Foods And Drinks"
   home: "Home"
   currency: "₫"
+  result_search: "Results search"
+  no_result: "No results"
   layouts:
     header:
       categories: "Categories"

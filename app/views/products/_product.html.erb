@@ -1,0 +1,17 @@
+<% @products.each do |product| %>
+  <div class="col-md-4 w3l-event-grid product-item">
+    <div class="w3l-event-img">
+      <%= link_to image_tag(product.image), "#" %>
+    </div>
+    <div class="news-grid-info">
+      <%= link_to product.name, "#", class: "product-title" %>
+      <h5><%= product.price %><%= t "currency" %>
+      </h5>
+      <p><%= product.description.truncate Settings.product.truncate_des_product  %></p>
+      <%= link_to cart_path(product.id), remote: true, method: :patch, class: "btn btn-add-to-cart" do %>
+        <span class="glyphicon glyphicon-shopping-cart"></span>
+        <%= t ".add_to_cart" %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

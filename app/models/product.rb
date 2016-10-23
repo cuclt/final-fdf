@@ -6,6 +6,9 @@ class Product < ApplicationRecord
 
   scope :newest, ->{order created_at: :desc}
   scope :limit_item, ->{limit Settings.home.limit_product}
+  scope :search, ->search do
+    where "LOWER(name) LIKE ?", "%#{search.downcase}%" if search.present?
+  end
 
   mount_uploader :image, PictureUploader
 end
