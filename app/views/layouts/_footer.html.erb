@@ -23,8 +23,8 @@
       </div>
       <div class="col-md-4 agile-footer-grid">
         <h4><%= t ".new_suggest" %></h4>
-        <p><%= t ".user_suggest" %></p>
-          <%= submit_tag t(".submit") %>
+        <p class="suggest"><%= t ".user_suggest" %></p>
+          <%= link_to t(".submit"), new_suggest_path, class: "suggest-product" %>
       </div>
       <div class="clearfix"> </div>
     </div>

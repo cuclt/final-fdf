@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :orders
   resources :categories, only: :show
   resources :users, only: :show
+  resources :suggests, only: [:new, :create]
 end

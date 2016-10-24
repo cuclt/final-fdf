@@ -62,7 +62,6 @@ ActiveRecord::Schema.define(version: 20161022030522) do
 
   create_table "suggests", force: :cascade do |t|
     t.string   "name"
-    t.float    "price"
     t.string   "image"
     t.string   "description"
     t.integer  "user_id"
