@@ -22,11 +22,8 @@ gem "mini_magick"
 gem "cancancan"
 gem "omniauth-twitter"
 gem "omniauth-facebook"
-<<<<<<< HEAD
 gem "ratyrate"
-=======
 gem "chatwork"
->>>>>>> 105e996c29ed4bbd2542daf88d01d6d4d6475129
 
 group :development, :test do
   gem "sqlite3", "1.3.11"

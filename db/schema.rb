@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161024060708) do
 
   create_table "average_caches", force: :cascade do |t|
@@ -21,9 +20,6 @@ ActiveRecord::Schema.define(version: 20161024060708) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-=======
-ActiveRecord::Schema.define(version: 20161022030522) do
->>>>>>> 105e996c29ed4bbd2542daf88d01d6d4d6475129
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
