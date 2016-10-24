@@ -44,6 +44,26 @@ en:
   reply: "Reply"
   address: "Address"
   close: "×"
+  user_list: "User list"
+  user: "User"
+  delete: "Delete"
+  category: "Category"
+  product: "Product"
+  home: "Home"
+  order: "Order"
+  suggest: "Suggest"
+  admin: "Admin"
+  add: "Add"
+  added: "Added"
+  suggest_not_exist: "Suggest not exist"
+  delete_successfully: "Delete successfully"
+  delete_not_successfully: "Delete not successfully"
+  saved: "Saved"
+  save_not_successfully: "Save not successfully"
+  admin.confirm_del: "Are you sure"
+  create_product: "Create product"
+  no_image: "No image"
+  product_not_exist: "Product not exist"
   time:
     formats:
       short_date: "%m/%d/%Y"
@@ -57,6 +77,26 @@ en:
   no_result: "No results"
   suggest_product: "Suggest product"
   address: "Address"
+  edit_product: "Edit product"
+  total: "total"
+  user: "user"
+  accepted: "Accepted"
+  accept: "Accept"
+  order_not_exist: "Order not exist"
+  number: "number"
+  disable: "Disable"
+  disabled: "Disabled"
+  detele_category: "You can delete this category because don't have any product in this category"
+  disable_category: "You just can disable this category, because it's having many product"
+  edit_category: "Edit category"
+  category_list: "Category list"
+  category_not_exist: "Category not exist"
+  detail: "Details"
+  quantity: "quantity"
+  edit: "edit"
+  suggest_list: "Suggest list"
+  product_not_exist: "Product not exist"
+  description: "Description"
   time:
     formats:
       short_date: "%m/%d/%Y"
@@ -103,6 +143,9 @@ en:
       increase: "increase"
       decrease: "decrease"
   danger:
+    user_is_not_admin: "User is not admin"
+    users:
+      user_del_fail: "Delete user fail!"
     order:
       address: "Please enter address."
     categories:
@@ -115,6 +158,8 @@ en:
     orders:
       successful: "Order successfully!"
       not_found: "Order not found!"
+    users:
+      user_del: "User delete successfully!"
   order_mailer:
     index:
       order: "Order mail"
@@ -122,6 +167,10 @@ en:
       total: "Total"
     order_details:
       number_order: "No."
+      category: "Category"
+      name: "Name"
+      quantity: "Quantity"
+      price: "Price"
   orders:
     order_details:
       list: "List product"

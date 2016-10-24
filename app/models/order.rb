@@ -1,7 +1,7 @@
 class Order < ApplicationRecord
   attr_accessor :cart
 
-  belongs_to :user
+  belongs_to :user, dependent: :destroy
   has_many :order_details
   has_many :products, through: :order_details
   enum status: {open: 1, close: 0}

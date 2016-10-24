@@ -18,3 +18,7 @@
 //= require owl.carousel
 //= require jquery.raty
 //= require ratyrate
+//= require social-share-button
+//= require dataTables/jquery.dataTables
+//= require dataTables/extras/dataTables.responsive
+//= require dataTables/jquery.dataTables

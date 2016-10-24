@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    root "products#index"
+    resources :users
+    resources :products
+    resources :suggests
+    resources :orders
+    resources :categories
+  end
   root "static_pages#home"
   get "search(/:search)" => "searches#index", as: :search
   devise_for :users, controllers: {registrations: "registrations",

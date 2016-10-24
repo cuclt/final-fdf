@@ -1,4 +1,5 @@
 class SuggestsController < ApplicationController
+  layout "signup_template"
   before_action :authenticate_user!
   def new
     @suggest = Suggest.new

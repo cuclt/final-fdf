@@ -2,6 +2,7 @@
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+@import 'social-share-button';
 
 body a {
   transition: 0.5s all;
@@ -2179,6 +2180,7 @@ i.fa.fa-pencil{
 .wrapper {
   margin-top: 80px;
   margin-bottom: 80px;
+  min-height: 780px;
 }
 
 .form-signin {
@@ -2486,7 +2488,7 @@ a:hover {
 .alert {
   opacity: 1;
   position: absolute;
-  min-width: 15%;
+  min-width: 18%;
   top: 120px;
   right: 20px;
 }
@@ -2580,4 +2582,47 @@ li.search-item {
 }
 img.raty-cancel {
  display: none;
+}
+#content {
+  width: 100%;
+}
+.product-title {
+  position: relative;
+}
+.social-share-button {
+  position: absolute;
+  top: 1px;
+  left: 200px;
+}
+.img-circle {
+  width: 35px;
+  height: 35px;
+}
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 12px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+.admin li {
+  height: 64px;
+}
+.admin li:hover{
+  background-color: #090909;
+  color: #fff;
+}
+.portlet-body img {
+  max-width: 150px;
+  max-height: 150px;
+}
+#data-list th, td {
+  text-align: center;
 }

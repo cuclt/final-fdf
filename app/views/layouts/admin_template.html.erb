@@ -9,10 +9,13 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class="banner">
-      <%= render "layouts/header" %>
+    <%= render "admin/layouts/header" %>
+    <div class="container wrapper">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <%= yield %>
     </div>
-    <%= yield %>
-    <%= render "layouts/footer" %>
+    <%= render "admin/layouts/footer" %>
   </body>
 </html>

@@ -11,4 +11,11 @@ class ApplicationController < ActionController::Base
   def load_category
     @categories = Category.all
   end
+
+  def verify_admin
+    unless current_user.admin?
+      redirect_to root_path
+      flash[:danger] = t "danger.user_is_not_admin"
+    end
+  end
 end
