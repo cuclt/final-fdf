@@ -1,0 +1,82 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  signin: "Sign in"
+  signup: "Sign up"
+  edit_profile: "Edit profile"
+  signup_now: "Sign up now!"
+  forgot_password: "Forgot Password?"
+  or: "Or"
+  remember_me: "Remember me"
+  email: "Email"
+  password: "Password"
+  name: "Name"
+  error_login: "Invalid email/password combination"
+  title: "Foods And Drinks"
+  home: "Home"
+  currency: "₫"
+  could_not_find_the_product: "Could not find the product"
+  description: "Description"
+  comments: "Comments"
+  could_not_load_the_comment: "Counld not load the comment"
+  error: "Error"
+  price: "Price"
+  reply: "Reply"
+  layouts:
+    header:
+      categories: "Categories"
+      menu: "Menu"
+      signup: "Sign up"
+      signin: "Sign in"
+      logout: "Logout"
+      profile: "Profile"
+      signout: "Sign out"
+    footer:
+      copy_right: "2016"
+      about_us: "About Foods And Drinks"
+      about_description: "Our store always ensure the best service for customers."
+      popular_product: "Popular Products"
+      user_suggest: "You can suggest new product for us!"
+      submit: "Submit"
+  static_pages:
+    home:
+      top_product: "Top product"
+      cart: "Add to cart"
+      top_product_des: "Top product today."
+      today_specials: "Today specials"
+      today_special_des: "Top specials product today."
+      quantity: "Quantity: "
+  products:
+    index:
+      top_product: "Top Product"
+      add_to_cart: "Add to cart"
+  carts:
+    index:
+      product_name: "Product Name"
+      move_to_cart: "Move to cart"
+      unit_price: "Unit price"
+      qty: "Quantity"
+      subtotal: "Subtotal"
+      total: "Total: "
+    list_product:
+      increase: "increase"
+      decrease: "decrease"

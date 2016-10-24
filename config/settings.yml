@@ -1,0 +1,9 @@
+per_page: 12
+per_page_comment: 6
+limit_categories: 12
+home:
+  limit_product: 6
+  offset_top_product: 1
+  offset_special_product: 7
+product:
+  truncate_des_product: 50

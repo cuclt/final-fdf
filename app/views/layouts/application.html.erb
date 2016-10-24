@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t "title" %></title>
+    <%= stylesheet_link_tag "application", media: "all",
+      "data-turbolinks-track": true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": true %>
+    <%= favicon_link_tag "fd-logo.jpg" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="banner">
+      <%= render "layouts/header" %>
+      <% flash.each do |message_type, message| %>
+        <%= content_tag :div, message, class: "alert alert-#{message_type}" %>
+      <% end %>
+      <div class="banner-slider">
+        <%= render "layouts/banner" %>
+      </div>
+    </div>
+    <%= yield %>
+    <%= render "layouts/footer" %>
+  </body>
+</html>
