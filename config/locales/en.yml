@@ -41,13 +41,11 @@ en:
   error: "Error"
   price: "Price"
   reply: "Reply"
-<<<<<<< HEAD
   address: "Address"
   close: "×"
   time:
     formats:
       short_date: "%m/%d/%Y"
-=======
   your_order: "Your order"
   update: "Update"
   profile: "Profile"
