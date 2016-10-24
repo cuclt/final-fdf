@@ -97,10 +97,6 @@ en:
     list_product:
       increase: "increase"
       decrease: "decrease"
-  success:
-    orders:
-      successful: "Order successfully!"
-      not_found: "Order not found!"
   danger:
     orders:
       address: "Please enter address."
@@ -111,3 +107,17 @@ en:
   success:
     suggests:
       successful: "Suggest successfully!"
+    orders:
+      successful: "Order successfully!"
+      not_found: "Order not found!"
+  order_mailer:
+    index:
+      order: "Order mail"
+      user: "Username"
+      total: "Total"
+    order_details:
+      number_order: "No."
+      category: "Category"
+      name: "Name"
+      quantity: "Quantity"
+      price: "Price"
