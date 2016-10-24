@@ -34,6 +34,7 @@ en:
   title: "Foods And Drinks"
   home: "Home"
   currency: "₫"
+<<<<<<< HEAD
   could_not_find_the_product: "Could not find the product"
   description: "Description"
   comments: "Comments"
@@ -52,6 +53,10 @@ en:
   setting: "Setting"
   logout: "Logout"
   history_order: "History order"
+=======
+  result_search: "Results search"
+  no_result: "No results"
+>>>>>>> a1a8ca0e41949a3fd2d1a1c2051445433426a255
   layouts:
     header:
       categories: "Categories"

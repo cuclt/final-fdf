@@ -1,0 +1,17 @@
+  <div class="events">
+    <div class="container">
+      <% if @products.any? %>
+        <div class="team-heading">
+          <h3><%= t "result_search" %></h3>
+        </div>
+        <div class="w3l-event-grids">
+          <%= render "products/product" %>
+          <div class="clearfix"> </div>
+        </div>
+      <% else %>
+        <div class="team-heading">
+          <h3><%= t "no_result" %></h3>
+        </div>
+      <% end %>
+    </div>
+  </div>

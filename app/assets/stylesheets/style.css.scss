@@ -232,6 +232,7 @@ span.menu {
   overflow: hidden;
   width: 100%;
   padding: 0;
+  margin-bottom: 0;
 }
 .rslides li {
   -webkit-backface-visibility: hidden;
@@ -2520,4 +2521,57 @@ a:hover {
   border-bottom: 0;
   border-radius: 3px 3px 0 0;
   margin-bottom: 0;
+}
+.search {
+  padding: 6px 12px;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  width: 89%;
+  float: left;
+}
+.result-search {
+  display: block;
+}
+.btn-search {
+  border-radius: 0;
+  border-left: 0;
+  background-color: #f35041;
+  color: #fff;
+}
+.btn-search:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 500px;
+  overflow-x: hidden;
+}
+
+li.search-item {
+  height: 75px;
+  &:hover {
+    background-color: #ecf0f1;
+    cursor:pointer;
+  }
+}
+
+#livesearch {
+  a {
+    color: #66757f;
+  }
+}
+
+.search-item-image {
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+  }
 }
