@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :carts
   resources :comments
   resources :orders
+  resources :categories, only: :show
+  resources :users, only: :show
 end

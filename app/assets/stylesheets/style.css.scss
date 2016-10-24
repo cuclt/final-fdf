@@ -64,6 +64,9 @@ span.menu {
 .top-nav ul li:nth-child(3) {
   margin-right: 31em;
 }
+.dropdown-menu li:nth-child(3) {
+  margin-right: 2.5em !important;
+}
 .top-nav li a {
   color: #333;
   font-size: 1em;
@@ -2485,4 +2488,35 @@ a:hover {
   min-width: 15%;
   top: 120px;
   right: 20px;
+.dropdown-menu li {
+  width: 100%;
+  margin: 0 !important;
+  padding: .5em .5em;
+}
+.dropdown-menu li:hover {
+  background-color: #f35041;
+}
+.dropdown-menu li a:hover {
+  background-color: #f35041;
+  color: #fff;
+}
+.img-circle {
+  width: 35px;
+  height: 35px;
+}
+.wrapper {
+  margin: 0 auto !important;
+}
+.avatar {
+  border-radius: 3px;
+  width: 100%;
+}
+.profile {
+  padding: 15px 10px;
+  line-height: 17px;
+  background-color: #f5f5f5;
+  border: 1px solid #d8d8d8;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 0;
 }

@@ -41,11 +41,19 @@ en:
   error: "Error"
   price: "Price"
   reply: "Reply"
+<<<<<<< HEAD
   address: "Address"
   close: "×"
   time:
     formats:
       short_date: "%m/%d/%Y"
+=======
+  your_order: "Your order"
+  update: "Update"
+  profile: "Profile"
+  setting: "Setting"
+  logout: "Logout"
+  history_order: "History order"
   layouts:
     header:
       categories: "Categories"
@@ -95,3 +103,6 @@ en:
   danger:
     orders:
       address: "Please enter address."
+  danger:
+    categories:
+      not_found: "Category not found!"
