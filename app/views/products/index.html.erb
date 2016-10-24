@@ -10,7 +10,7 @@
             <%= link_to image_tag(product.image), "#" %>
           </div>
           <div class="news-grid-info">
-            <%= link_to product.name, "#", class: "product-title" %>
+            <%= link_to product.name, product_path(product.id), class: "product-title" %>
             <h5><%= product.price %><%= t "currency" %>
             </h5>
             <p><%= product.description.truncate Settings.product.truncate_des_product  %></p>

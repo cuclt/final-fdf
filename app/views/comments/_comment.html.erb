@@ -1,0 +1,13 @@
+<div class="media response-info">
+  <div class="media-left response-text-left">
+    <%= link_to image_tag(comment.user.avatar) %>
+    <h5><%= link_to comment.user.name, "#" %></h5>
+  </div>
+  <div class="media-body response-text-right">
+    <%= comment.content %>
+    <ul>
+      <li><a href="single.html"><%= t "reply" %></a></li>
+    </ul>
+  </div>
+  <div class="clearfix"> </div>
+</div>
