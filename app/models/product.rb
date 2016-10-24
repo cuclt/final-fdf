@@ -11,4 +11,6 @@ class Product < ApplicationRecord
   end
 
   mount_uploader :image, PictureUploader
+
+  ratyrate_rateable "rate"
 end

@@ -18,6 +18,7 @@
                   </h2>
                   <p><%= t "price" %><a href="#"><%= @product.price %></a></p>
                 </div>
+                <%= rating_for @product, "rate", disable_after_rate: false %>
                 <div class="blog-left-right-bottom">
                   <p><h4><%= t "description" %></h4>
                   <span><%= @product.description %></span></p>

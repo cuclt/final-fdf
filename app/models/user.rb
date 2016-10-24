@@ -11,6 +11,8 @@ class User < ApplicationRecord
 
   enum role: {admin: 1, user: 0}
 
+  ratyrate_rater
+
   mount_uploader :avatar, PictureUploader
   def self.from_omniauth auth
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|

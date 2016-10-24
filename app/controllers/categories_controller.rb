@@ -6,5 +6,6 @@ class CategoriesController < ApplicationController
     else
       flash[:danger] = t "danger.categories.not_found"
       redirect_to :back
+    end
   end
 end

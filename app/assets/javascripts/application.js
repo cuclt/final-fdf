@@ -16,3 +16,5 @@
 //= require turbolinks
 //= require_tree .
 //= require owl.carousel
+//= require jquery.raty
+//= require ratyrate
