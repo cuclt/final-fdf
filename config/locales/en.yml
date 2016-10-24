@@ -27,6 +27,7 @@ en:
   forgot_password: "Forgot Password?"
   or: "Or"
   remember_me: "Remember me"
+  username: "Username"
   email: "Email"
   password: "Password"
   name: "Name"
@@ -34,6 +35,7 @@ en:
   title: "Foods And Drinks"
   home: "Home"
   currency: "₫"
+<<<<<<< HEAD
   could_not_find_the_product: "Could not find the product"
   description: "Description"
   comments: "Comments"
@@ -55,6 +57,12 @@ en:
   result_search: "Results search"
   no_result: "No results"
   suggest_product: "Suggest product"
+=======
+  address: "Address"
+  time:
+    formats:
+      short_date: "%m/%d/%Y"
+>>>>>>> 105e996c29ed4bbd2542daf88d01d6d4d6475129
   layouts:
     header:
       categories: "Categories"
@@ -97,6 +105,7 @@ en:
     list_product:
       increase: "increase"
       decrease: "decrease"
+<<<<<<< HEAD
   danger:
     orders:
       address: "Please enter address."
@@ -117,6 +126,15 @@ en:
       total: "Total"
     order_details:
       number_order: "No."
+=======
+  success:
+    orders:
+      successful: "Order successfully!"
+      not_found: "Order not found!"
+  orders:
+    order_details:
+      list: "List product"
+>>>>>>> 105e996c29ed4bbd2542daf88d01d6d4d6475129
       category: "Category"
       name: "Name"
       quantity: "Quantity"

@@ -1,5 +1,5 @@
-User.create! name:  "admin", email: "admin@gmail.com", password: "111111",
-  password_confirmation: "111111", role: 1
+User.create! name:  "admin", email: "admin@gmail.com", chatwork_id: "lethicuc",
+  password: "111111", password_confirmation: "111111", role: 1
 
 4.times do |n|
   name  = "user#{n + 2}"

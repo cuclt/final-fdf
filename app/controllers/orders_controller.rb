@@ -12,6 +12,7 @@ class OrdersController < ApplicationController
       @order = Order.new order_params
       if @order.save
         OrderMailer.index(@order, current_user).deliver_later
+        Chatwork.send_message @order
         session.delete :cart
         flash[:success] = t "success.orders.successful"
         redirect_to order_path @order
@@ -21,7 +22,7 @@ class OrdersController < ApplicationController
       end
     else
       flash[:danger] = t "carts.not_product"
-      redirect_to carts_path
+      redirect_to :back
     end
   end
 
