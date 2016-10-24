@@ -8,4 +8,6 @@ class Product < ApplicationRecord
   scope :limit_item, ->{limit Settings.home.limit_product}
 
   mount_uploader :image, PictureUploader
+
+  ratyrate_rateable "rate"
 end
