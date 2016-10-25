@@ -13,7 +13,7 @@ class Admin::ProductsController < ApplicationController
     $product_suggest = Suggest.find_by id: params[:product_suggest]
     if $product_suggest
       @product = Product.new name: $product_suggest.name,
-      price: $product_suggest.price, description: $product_suggest.description,
+      description: $product_suggest.description,
       image: $product_suggest.image
     else
       @product = Product.new
