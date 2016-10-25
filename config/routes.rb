@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :products
     resources :suggests
     resources :orders
+    resources :order_details
     resources :categories
   end
   root "static_pages#home"

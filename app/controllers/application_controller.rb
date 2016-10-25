@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
 
   def load_category
-    @categories = Category.all
+    @categories = Category.active.newest
   end
 
   def verify_admin

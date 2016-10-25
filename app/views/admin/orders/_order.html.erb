@@ -3,9 +3,8 @@
     <th><%= order.total %></th>
     <th><%= order.user.name %></th>
     <th>
-      <%= link_to t("detail"), admin_order_path(order.id),
-        method: :delete, class: "btn btn-success btn-sm",
-        data: {confirm: t("admin.confirm_del")}  %>
+      <%= link_to t("detail"), admin_order_detail_path(order.id),
+        class: "btn btn-success btn-sm"  %>
     </th>
     <th>
       <% if order.status == "close" %>

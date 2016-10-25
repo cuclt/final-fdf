@@ -9,6 +9,9 @@ class Product < ApplicationRecord
   scope :search, ->search do
     where "LOWER(name) LIKE ?", "%#{search.downcase}%" if search.present?
   end
+  scope :search_by_condition, ->category_id do
+    where "category_id = ?", category_id if category_id.present?
+  end
 
   mount_uploader :image, PictureUploader
 

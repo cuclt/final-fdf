@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="portlet box green">
+      <div class="team-heading">
+        <h3>
+          <%= t "order_details" %>
+        </h3>
+        <hr>
+      </div>
+      <div class="portlet-body">
+        <table class="table table-striped table-hover table-responsive datatable"
+          id="data-list">
+          <thead>
+            <tr>
+              <th><%= t "product" %></th>
+              <th><%= t "image" %></th>
+              <th><%= t "quantity" %></th>
+              <th><%= t "price" %></th>
+              <th><%= t "total" %></th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <% @order_details.each do |detail| %>
+              <tr>
+                <th><%= detail.product.name %></th>
+                <th><%= image_tag detail.product.image %></th>
+                <th><%= detail.quantity %></th>
+                <th><%= detail.product.price %><%= t "currency" %></th>
+                <th><%= detail.total_price %><%= t "currency" %></th>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2480,7 +2480,7 @@ a:hover {
   color: #fff;
   font-weight: bold;
 }
-.alert-notice {
+.alert-notice, .alert-alert {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #3c763d;
@@ -2510,7 +2510,7 @@ a:hover {
   height: 35px;
 }
 .wrapper {
-  margin: 0 auto !important;
+  margin: 120px auto !important;
 }
 .avatar {
   border-radius: 3px;
@@ -2613,11 +2613,14 @@ img.raty-cancel {
     text-decoration: none;
   }
 }
-.admin li {
+.admin .admin-menu {
   height: 64px;
 }
-.admin li:hover{
-  background-color: #090909;
+.admin .admin-menu a {
+  color: #fff !important;
+}
+.admin .admin-menu:hover{
+  background-color: #c0392b;
   color: #fff;
 }
 .portlet-body img {
@@ -2626,4 +2629,16 @@ img.raty-cancel {
 }
 #data-list th, td {
   text-align: center;
+}
+.color {
+  background-color: #f35041;
+  color: #fff;
+  border-bottom: #f35041;
+}
+.dropdown-menu {
+  border: 0 !important;
+}
+.selectpicker {
+  width: 15% !important;
+  display: inline;
 }

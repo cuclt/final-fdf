@@ -1,15 +1,15 @@
 class Admin::ProductsController < ApplicationController
   layout "admin_template"
   before_action :authenticate_user!
-  before_action :verify_admin
   before_action :load_product, only: [:destroy, :edit, :update]
 
   def index
-    @products = Product.all
+    @categories = Category.active.newest
+    @products = Product.search_by_condition(params[:search]).newest
   end
 
   def new
-    @categories = Category.all
+    @categories = Category.newest
     $product_suggest = Suggest.find_by id: params[:product_suggest]
     if $product_suggest
       @product = Product.new name: $product_suggest.name,
@@ -21,7 +21,7 @@ class Admin::ProductsController < ApplicationController
   end
 
   def edit
-    @categories = Category.all
+    @categories = Category.newest
   end
 
   def update

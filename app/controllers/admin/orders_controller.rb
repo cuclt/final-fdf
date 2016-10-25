@@ -5,7 +5,7 @@ class Admin::OrdersController < ApplicationController
   before_action :load_order, only: :update
 
   def index
-    @orders = Order.all
+    @orders = Order.all.newest
   end
 
   def update

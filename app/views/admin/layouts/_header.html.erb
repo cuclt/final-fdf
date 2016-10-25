@@ -1,14 +1,14 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-fixed-top navbar-inverse color">
   <div class="container">
     <%= link_to t("title"), root_path, id: "logo", data: {turbolinks: false} %>
     <nav>
       <ul class="nav navbar-nav navbar-right admin">
-        <li><%= link_to t("home"), root_path, data: {turbolinks: false} %></li>
-        <li><%= link_to t("user"), admin_users_path, data: {turbolinks: false} %></li>
-        <li><%= link_to t("category"), admin_categories_path, data: {turbolinks: false} %></li>
-        <li><%= link_to t("order"), admin_orders_path, data: {turbolinks: false} %></li>
-        <li><%= link_to t("suggest"), admin_suggests_path, data: {turbolinks: false} %></li>
-        <li><%= link_to t("product"), admin_products_path, data: {turbolinks: false} %></li>
+        <li class="admin-menu"><%= link_to t("home"), root_path, data: {turbolinks: false} %></li>
+        <li class="admin-menu"><%= link_to t("user"), admin_users_path, data: {turbolinks: false} %></li>
+        <li class="admin-menu"><%= link_to t("category"), admin_categories_path, data: {turbolinks: false} %></li>
+        <li class="admin-menu"><%= link_to t("order"), admin_orders_path, data: {turbolinks: false} %></li>
+        <li class="admin-menu"><%= link_to t("suggest"), admin_suggests_path, data: {turbolinks: false} %></li>
+        <li class="admin-menu"><%= link_to t("product"), admin_products_path, data: {turbolinks: false} %></li>
         <% if user_signed_in? %>
           <li class="dropdown">
             <%= link_to "#", class: "dropdown-toggle", "data-toggle": "dropdown" do %>
@@ -23,8 +23,6 @@
               </li>
             </ul>
           </li>
-        <% else %>
-          <li><%= link_to t("signin"), new_user_session_path %></li>
         <% end %>
       </ul>
     </nav>

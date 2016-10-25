@@ -4,7 +4,7 @@ class Admin::UsersController < ApplicationController
   before_action :verify_admin
 
   def index
-    @users = User.all
+    @users = User.newest.all
   end
 
   def destroy

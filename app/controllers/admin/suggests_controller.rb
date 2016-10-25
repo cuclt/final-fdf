@@ -5,7 +5,7 @@ class Admin::SuggestsController < ApplicationController
   before_action :load_suggest, only: :destroy
 
   def index
-    @suggests = Suggest.all
+    @suggests = Suggest.newest
   end
 
   def destroy

@@ -13,6 +13,7 @@ class User < ApplicationRecord
 
   ratyrate_rater
 
+  scope :newest, ->{order created_at: :desc}
   mount_uploader :avatar, PictureUploader
 
   def self.from_omniauth auth

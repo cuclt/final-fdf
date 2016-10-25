@@ -5,7 +5,7 @@ class Admin::CategoriesController < ApplicationController
   before_action :load_category, only: [:destroy, :update, :edit]
 
   def index
-    @categories = Category.all
+    @categories = Category.newest.all
   end
 
   def destroy

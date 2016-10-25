@@ -64,6 +64,7 @@ en:
   create_product: "Create product"
   no_image: "No image"
   product_not_exist: "Product not exist"
+  all: "All"
   time:
     formats:
       short_date: "%m/%d/%Y"
@@ -78,7 +79,7 @@ en:
   suggest_product: "Suggest product"
   address: "Address"
   edit_product: "Edit product"
-  total: "total"
+  total: "Total"
   accepted: "Accepted"
   accept: "Accept"
   order_not_exist: "Order not exist"
@@ -96,6 +97,7 @@ en:
   suggest_list: "Suggest list"
   product_not_exist: "Product not exist"
   description: "Description"
+  order_emty: "Order Emty"
   time:
     formats:
       short_date: "%m/%d/%Y"
