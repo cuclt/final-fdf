@@ -1,5 +1,7 @@
 class Admin::SuggestsController < ApplicationController
   layout "admin_template"
+  before_action :authenticate_user!
+  before_action :verify_admin
   before_action :load_suggest, only: :destroy
 
   def index

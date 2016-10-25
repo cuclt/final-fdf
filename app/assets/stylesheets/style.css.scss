@@ -2487,10 +2487,11 @@ a:hover {
 }
 .alert {
   opacity: 1;
-  position: absolute;
+  position: fixed;
   min-width: 18%;
   top: 120px;
   right: 20px;
+  z-index: 9999;
 }
 .dropdown-menu li {
   width: 100%;

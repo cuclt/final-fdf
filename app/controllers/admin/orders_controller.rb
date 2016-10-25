@@ -1,5 +1,7 @@
 class Admin::OrdersController < ApplicationController
   layout "admin_template"
+  before_action :authenticate_user!
+  before_action :verify_admin
   before_action :load_order, only: :update
 
   def index

@@ -7,6 +7,7 @@ class CartsController < ApplicationController
     @cart.add_item params[:id]
     session[:cart] = @cart.sort
     respond_to do |format|
+      format.html {flash[:success] = "ok"}
       format.js {render :update}
     end
   end

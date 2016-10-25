@@ -7,7 +7,7 @@ class Order < ApplicationRecord
   enum status: {open: 1, close: 0}
   validates :address, presence: true, length: {maximum: 50}
 
-  after_save :build_order_details
+  after_create :build_order_details
 
   scope :newest, ->{order created_at: :desc}
 

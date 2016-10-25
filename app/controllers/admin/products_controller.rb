@@ -1,5 +1,7 @@
 class Admin::ProductsController < ApplicationController
   layout "admin_template"
+  before_action :authenticate_user!
+  before_action :verify_admin
   before_action :load_product, only: [:destroy, :edit, :update]
 
   def index

@@ -11,9 +11,9 @@
   <body>
     <%= render "admin/layouts/header" %>
     <div class="container wrapper">
-      <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
+      <div class="container message">
+        <%= render "layouts/messages" %>
+      </div>
       <%= yield %>
     </div>
     <%= render "admin/layouts/footer" %>

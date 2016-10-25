@@ -1,5 +1,7 @@
 class Admin::CategoriesController < ApplicationController
   layout "admin_template"
+  before_action :authenticate_user!
+  before_action :verify_admin
   before_action :load_category, only: [:destroy, :update, :edit]
 
   def index
@@ -34,13 +36,16 @@ class Admin::CategoriesController < ApplicationController
   end
 
   def update
-    if @category.update_attribute(:status, false)
-      flash[:success] = t "saved"
-    end
-    if @category.update_attributes category_params
-      flash[:success] = t "saved"
+    if params["_method"] == "patch"
+      if @category.update_attributes category_params
+        flash[:success] = t "saved"
+      else
+        render :edit
+      end
     else
-      render :edit
+      if @category.update_attributes status: false
+        flash[:success] = t "saved"
+      end
     end
     redirect_to admin_categories_path
   end
